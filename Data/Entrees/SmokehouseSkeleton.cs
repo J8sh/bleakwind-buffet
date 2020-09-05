@@ -34,51 +34,99 @@ namespace BleakwindBuffet.Data.Entrees
         /// <summary>
         /// get bool of sausage links
         /// </summary>
-        public bool SausageLink { get; }
+        public bool SausageLink
+        {
+            get
+            {
+                return sausageLink;
+            }
+            set
+            {
+                sausageLink = value;
+            }
+        }
 
         /// <summary>
         /// get bool of egg 
         /// </summary>
-        public bool Egg { get; }
+        public bool Egg
+        {
+            get
+            {
+                return egg;
+            }
+            set
+            {
+                egg = value;
+            }
+        }
 
         /// <summary>
         /// get bool of hashBrowns
         /// </summary>
-        public bool HashBrowns { get; }
+        public bool HashBrowns
+        {
+            get
+            {
+                return hashBrowns;
+            }
+            set
+            {
+                hashBrowns = value;
+            }
+        }
 
         /// <summary>
         /// get bool of pancakes
         /// </summary>
-        public bool Pancake { get; }
+        public bool Pancake
+        {
+            get
+            {
+                return pancake;
+            }
+            set
+            {
+                pancake = value;
+            }
+        }
 
         /// <summary>
         /// get Price of Smoke house Skeleton
         /// </summary>
-        public double Price { get; }
+        public double Price
+        {
+            get
+            {
+                return 5.62;
+            }
+        }
         
         /// <summary>
         /// get Calories for the Smoke house Skeleton
         /// </summary>
-        public uint Calories { get; }
-        
+        public uint Calories
+        {
+            get
+            {
+                return 602;
+            }
+        }
+
         /// <summary>
         /// get the special instructions for the Smoke house Skeleton
         /// </summary>
-        public List<String> SpecialInstructions { get; }
-
-        /// <summary>
-        /// special instructions for the SpecialInstructions list
-        /// </summary>
-        String[] Instructions = { "Hold sausage", "Hold eggs", "Hold hash browns", "Hold pancakes" };
-
-        /// <summary>
-        /// constructor with price and calories set
-        /// </summary>
-        public SmokehouseSkeleton()
+        public List<string> SpecialInstructions
         {
-            this.Price = 5.62;
-            this.Calories = 602;
-
+            get
+            {
+                List<string> instructions = new List<string>();
+                if (!SausageLink) instructions.Add("Hold sausage");
+                if (!Egg) instructions.Add("Hold eggs");
+                if (!HashBrowns) instructions.Add("Hold hash browns");
+                if (!Pancake) instructions.Add("Hold pancakes");
+                return instructions;
+            }
         }
 
         /// <summary>

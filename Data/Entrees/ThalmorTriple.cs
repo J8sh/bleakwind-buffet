@@ -65,82 +65,193 @@ namespace BleakwindBuffet.Data.Entrees
         /// <summary>
         /// getter/setter for the bun
         /// </summary>
-        public bool Bun { get; set; }
+        public bool Bun
+        {
+            get
+            {
+                return bun;
+            }
+            set
+            {
+                bun = value;
+            }
+        }
 
         /// <summary>
         /// getter/setter for the ketchup
         /// </summary>
-        public bool Ketchup { get; set; }
+        public bool Ketchup
+        {
+            get
+            {
+                return ketchup;
+            }
+            set
+            {
+                ketchup = value;
+            }
+        }
 
         /// <summary>
         /// getter/setter for the mustard
         /// </summary>
-        public bool Mustard { get; set; }
+        public bool Mustard
+        {
+            get
+            {
+                return mustard;
+            }
+            set
+            {
+                mustard = value;
+            }
+        }
 
         /// <summary>
         /// getter/setter for the pickles
         /// </summary>
-        public bool Pickle { get; set; }
+        public bool Pickle
+        {
+            get
+            {
+                return pickle;
+            }
+            set
+            {
+                pickle = value;
+            }
+        }
 
         /// <summary>
         /// getter/setter for the cheese
         /// </summary>
-        public bool Cheese { get; set; }
+        public bool Cheese
+        {
+            get
+            {
+                return cheese;
+            }
+            set
+            {
+                cheese = value;
+            }
+        }
 
         /// <summary>
         /// getter/setter for the tomatoes
         /// </summary>
-        public bool Tomato { get; set; }
+        public bool Tomato
+        {
+            get
+            {
+                return tomato;
+            }
+            set
+            {
+                tomato = value;
+            }
+        }
 
         /// <summary>
         /// getter/setter for the lettuce
         /// </summary>
-        public bool Lettuce { get; set; }
+        public bool Lettuce
+        {
+            get
+            {
+                return lettuce;
+            }
+            set
+            {
+                lettuce = value;
+            }
+        }
 
         /// <summary>
         /// getter/setter for the mayo
         /// </summary>
-        public bool Mayo { get; set; }
+        public bool Mayo
+        {
+            get
+            {
+                return mayo;
+            }
+            set
+            {
+                mayo = value;
+            }
+        }
 
         /// <summary>
         /// getter/setter for the bacon
         /// </summary>
-        public bool Bacon { get; set; } 
+        public bool Bacon
+        {
+            get
+            {
+                return bacon;
+            }
+            set
+            {
+                bacon = value;
+            }
+        }
 
         /// <summary>
         /// getter/settter for the eggs
         /// </summary>
-        public bool Egg { get; set; }
+        public bool Egg
+        {
+            get
+            {
+                return egg;
+            }
+            set
+            {
+                egg = value;
+            }
+        }
 
         /// <summary>
         /// get the price for the Thalmor Triple
         /// </summary>
-        public double Price { get; }
+        public double Price
+        {
+            get
+            {
+                return 8.32;
+            }
+        }
 
         /// <summary>
         /// get the calorie count for the Thalmor Triple
         /// </summary>
-        public uint Calories { get; }
-        
+        public uint Calories
+        {
+            get
+            {
+                return 943;
+            }
+        }
+
         /// <summary>
         /// get any special instructions for the Thalmor Triple
         /// </summary>
-        public List<String> SpecialInstructions { get; }
+        public List<string> SpecialInstructions
+        {
+            get
+            {
+                List<string> instructions = new List<string>();
+                if (!Bacon) instructions.Add("Hold bacon");
+                if (!Egg) instructions.Add("Hold egg");
+                return instructions;
+            }
+        }
 
         /// <summary>
         /// list of special instructions
         /// </summary>
         String[] Instructions = { "Hold bacon", "Hold egg" };
-
-        /// <summary>
-        /// constructor that sets the price and calories 
-        /// </summary>
-        public ThalmorTriple()
-        {
-            this.Price = 8.32;
-            this.Calories = 943;
-
-        }
 
         /// <summary>
         /// ToString Method to override ToString

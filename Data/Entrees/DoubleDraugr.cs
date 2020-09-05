@@ -14,17 +14,19 @@ namespace BleakwindBuffet.Data.Entrees
         /// <summary>
         /// property for the burger price
         /// </summary>
-        public double Price { get; }
+        public double Price
+        {
+            get { return 7.32; }
+        }
 
         /// <summary>
         /// property for the Calorie total
         /// </summary>
-        public uint Calories { get; }
+        public uint Calories
+        {
+            get { return 843; }
+        }
 
-        /// <summary>
-        /// list property for any special instruction on the burger
-        /// </summary>
-        public List<String> SpecialInstructions { get; }
 
         /// <summary>
         /// bool to include bun
@@ -69,56 +71,137 @@ namespace BleakwindBuffet.Data.Entrees
         /// <summary>
         /// getter setter for Bun
         /// </summary>
-        public bool Bun { get; set; }
+        public bool Bun
+        {
+            get
+            {
+                return bun;
+            }
+            set
+            {
+                bun = value;   
+            }
+        }
 
         /// <summary>
         /// getter / setter for the ketchup
         /// </summary>
-        public bool Ketchup { get; set; }
+        public bool Ketchup
+        {
+            get
+            {
+                return ketchup;
+            }
+            set
+            {
+                ketchup = value;
+            }
+        }
 
         /// <summary>
         /// getter / setter for the Mustard
         /// </summary>
-        public bool Mustard { get; set; }
+        public bool Mustard
+        {
+            get
+            {
+                return mustard;
+            }
+            set
+            {
+                mustard = value;
+            }
+        }
 
         /// <summary>
         /// getter / setter for the Pickles
         /// </summary>
-        public bool Pickle { get; set; }
+        public bool Pickle
+        {
+            get
+            {
+                return pickle;
+            }
+            set
+            {
+                pickle = value;
+            }
+        }
 
         /// <summary>
         /// getter / setter for the Cheese
         /// </summary>
-        public bool Cheese { get; set; }
+        public bool Cheese
+        {
+            get
+            {
+                return cheese;
+            }
+            set
+            {
+                cheese = value;
+            }
+        }
 
         /// <summary>
         /// getter and setter for the Tomato
         /// </summary>
-        public bool Tomato { get; set; }
+        public bool Tomato
+        {
+            get
+            {
+                return tomato;
+            }
+            set
+            {
+                tomato = value;
+            }
+        }
 
         /// <summary>
         /// getter and setter for the Lettuce
         /// </summary>
-        public bool Lettuce { get; set; }
+        public bool Lettuce
+        {
+            get
+            {
+                return lettuce;
+            }
+            set
+            {
+                lettuce = value;
+            }
+        }
 
         /// <summary>
         /// getter and setter for the Mayo
         /// </summary>
-        public bool Mayo { get; set; }
+        public bool Mayo
+        {
+            get
+            {
+                return mayo;
+            }
+            set
+            {
+                mayo = value;
+            }
+        }
 
         /// <summary>
         /// special instructions for the doubleDraugr
         /// </summary>
-        String[] Instructions = { "Hold tomato", "Hold lettuce", "Hold mayo" };
-
-        /// <summary>
-        /// Constructor to set price and calories
-        /// </summary>
-        public DoubleDraugr()
+        private List<string> specialInstructions = new List<string>();
+        public List<string> SpecialInstructions
         {
-            this.Price = 7.32;
-            this.Calories = 843;
-
+            get
+            {
+                List<string> instructions = new List<string>();
+                if (!Tomato) instructions.Add("Hold tomato");
+                if (!Lettuce) instructions.Add("Hold lettuce");
+                if (!Mayo) instructions.Add("Hold mayo");
+                return instructions;
+            }
         }
 
         /// <summary>

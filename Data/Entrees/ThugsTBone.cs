@@ -14,26 +14,35 @@ namespace BleakwindBuffet.Data.Entrees
         /// <summary>
         /// get the price of the T Bone
         /// </summary>
-        public double Price { get; }
+        public double Price
+        {
+            get
+            {
+                return 6.44;
+            }
+        }
 
         /// <summary>
         ///  get the calorie count of the T bone
         /// </summary>
-        public uint Calories { get; }
+        public uint Calories
+        {
+            get
+            {
+                return 982;
+            }
+        }
 
         /// <summary>
         /// create a list of special instructions for the T Bone
         /// </summary>
-        public List<String> SpecialInstructions { get; }
-
-        /// <summary>
-        /// constructor that sets the price and calories
-        /// </summary>
-        public ThugsTBone()
+        public List<string> SpecialInstructions
         {
-            this.Price = 6.44;
-            this.Calories = 982;
-
+            get
+            {
+                List<string> instructions = new List<string>();
+                return instructions;
+            }
         }
 
         /// <summary>

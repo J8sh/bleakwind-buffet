@@ -34,49 +34,95 @@ namespace BleakwindBuffet.Data.Entrees
         /// <summary>
         /// get/set for Broccoli
         /// </summary>
-        public bool Broccoli { get; set; }
+        public bool Broccoli
+        {
+            get
+            {
+                return broccoli;
+            }
+            set
+            {
+                broccoli = value;
+            }
+        }
 
         /// <summary>
         /// get/set for Mushrooms
         /// </summary>
-        public bool Mushrooms { get; set; }
+        public bool Mushrooms
+        {
+            get
+            {
+                return mushrooms;
+            }
+            set
+            {
+                mushrooms = value;
+            }
+        }
 
         /// <summary>
         /// getter/setter for Tomatos
         /// </summary>
-        public bool Tomato { get; set; }
+        public bool Tomato
+        {
+            get
+            {
+                return tomato;
+            }
+            set
+            {
+                tomato = value;
+            }
+        }
 
         /// <summary>
         /// getter/setter for Cheddar
         /// </summary>
-        public bool Cheddar { get; set; }
+        public bool Cheddar
+        {
+            get
+            {
+                return cheddar;
+            }
+            set
+            {
+                cheddar = value;
+            }
+        }
 
         /// <summary>
         /// get price of Omelette
         /// </summary>
-        public double Price { get; }
-        
+        public double Price
+        {
+            get { return 4.57; }
+        }
+
         /// <summary>
         /// get calories of Omelette
         /// </summary>
-        public uint Calories { get; }
-        
+        public uint Calories
+        {
+            get { return 404; }
+        }
+
         /// <summary>
         /// get instructions for the Omelette
         /// </summary>
-        public List<String> SpecialInstructions { get; }
-
-        String[] Instructions = { "Hold broccoli", "Hold mushrooms", "Hold tomato", "Hold cheddar" };
-
-        /// <summary>
-        /// constructor with set Price and calories
-        /// </summary>
-        public GardenOrcOmelette()
+        public List<string> SpecialInstructions
         {
-            this.Price = 4.57;
-            this.Calories = 404;
-
+            get
+            {
+                List<string> instructions = new List<string>();
+                if (!Broccoli) instructions.Add("Hold broccoli");
+                if (!Mushrooms) instructions.Add("Hold mushrooms");
+                if (!Tomato) instructions.Add("Hold tomato");
+                if (!Cheddar) instructions.Add("Hold cheddar");
+                return instructions;
+            }
         }
+
 
         /// <summary>
         /// ToString Method to override ToString

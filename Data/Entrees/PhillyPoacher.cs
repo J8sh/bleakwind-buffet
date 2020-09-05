@@ -30,45 +30,83 @@ namespace BleakwindBuffet.Data.Entrees
         /// <summary>
         /// get the bool for the Sirloin
         /// </summary>
-        public bool Sirloin { get; set; }
+        public bool Sirloin
+        {
+            get
+            {
+                return sirloin;
+            }
+            set
+            {
+                sirloin = value;
+            }
+        }
 
         /// <summary>
         /// get the bool for the Onion
         /// </summary>
-        public bool Onion { get; set; }
+        public bool Onion
+        {
+            get
+            {
+                return onion;
+            }
+            set
+            {
+                onion = value;
+            }
+        }
 
         /// <summary>
         /// get the bool for the Roll
         /// </summary>
-        public bool Roll { get; set; }
+        public bool Roll
+        {
+            get
+            {
+                return roll;
+            }
+            set
+            {
+                roll = value;
+            }
+        }
 
         /// <summary>
         /// price for the Philly Poacher
         /// </summary>
-        public double Price { get; }
+        public double Price
+        {
+            get
+            {
+                return 7.23;
+            }
+        }
 
         /// <summary>
         /// get the calories for the philly poacher
         /// </summary>
-        public uint Calories { get; }
-        
+        public uint Calories
+        {
+            get
+            {
+                return 784;
+            }
+        }
+
         /// <summary>
         /// get the special instructions for the Philly Poacher
         /// </summary>
-        public List<String> SpecialInstructions { get; }
-
-        /// <summary>
-        /// different instruction options
-        /// </summary>
-        String[] Instructions = { "Hold sirloin", "Hold onions", "Hold roll" };
-
-        /// <summary>
-        /// Constructor with the price and calories set
-        /// </summary>
-        public PhillyPoacher()
+        public List<string> SpecialInstructions
         {
-            this.Price = 7.23;
-            this.Calories = 784;
+            get
+            {
+                List<string> instructions = new List<string>();
+                if (!Sirloin) instructions.Add("Hold sirloin");
+                if (!Onion) instructions.Add("Hold onions");
+                if (!Roll) instructions.Add("Hold roll");
+                return instructions;
+            }
         }
 
         /// <summary>
