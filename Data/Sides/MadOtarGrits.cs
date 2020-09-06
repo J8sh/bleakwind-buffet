@@ -13,24 +13,71 @@ namespace BleakwindBuffet.Data.Sides
 {
     public class MadOtarGrits
     {
+        /// <summary>
+        /// set size of meal
+        /// </summary>
         private Size size = Size.Small;
 
-        public Size Size { get; set; }
+        /// <summary>
+        /// getter/setter for the size of meal
+        /// </summary>
+        public Size Size
+        {
+            get
+            {
+                return size;
+            }
+            set
+            {
+                size = value;
+            }
+        }
 
         /// <summary>
-        /// get Price of Smoke house Skeleton
+        /// get Price of Mad Otar Grits
         /// </summary>
-        public double Price { get; }
+        public double Price
+        {
+            get
+            {
+                switch (Size)
+                {
+                    case Size.Small: return 1.22;
+                    case Size.Medium: return 1.58;
+                    case Size.Large: return 1.93;
+                    default: throw new NotImplementedException();
+                }
+            }
+        }
 
         /// <summary>
-        /// get Calories for the Smoke house Skeleton
+        /// get Calories for the mad Otar Grits
         /// </summary>
-        public uint Calories { get; }
+        public uint Calories
+        {
+            get
+            {
+                switch (Size)
+                {
+                    case Size.Small: return 105;
+                    case Size.Medium: return 142;
+                    case Size.Large: return 179;
+                    default: throw new NotImplementedException();
+                }
+            }
+        }
 
         /// <summary>
-        /// holds any special instructions
+        /// Empty SpecialInstructions requested from UML
         /// </summary>
-        public List<String> SpecialInstructions { get; }
+        public List<string> SpecialInstructions
+        {
+            get
+            {
+                List<string> instructions = new List<string>();
+                return instructions;
+            }
+        }
 
         /// <summary>
         /// ToString Method to override ToString
@@ -38,7 +85,7 @@ namespace BleakwindBuffet.Data.Sides
         /// <returns>string</returns>
         public override string ToString()
         {
-            return "{Size} Mad Otar Grits";
+            return Size.ToString() + " Mad Otar Grits";
         }
 
     }

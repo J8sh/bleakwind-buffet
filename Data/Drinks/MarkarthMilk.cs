@@ -25,36 +25,78 @@ namespace BleakwindBuffet.Data.Drinks
         /// <summary>
         /// get value of ice
         /// </summary>
-        public bool Ice { get; set; }
+        public bool Ice
+        {
+            get
+            {
+                return ice;
+            }
+            set
+            {
+                ice = value;
+            }
+        }
 
         /// <summary>
         /// get size of cup
         /// </summary>
-        public Size Size { get; set; }
+        public Size Size
+        {
+            get
+            {
+                return size;
+            }
+            set
+            {
+                size = value;
+            }
+        }
             
         /// <summary>
         /// get price of drink
         /// </summary>
-        public double Price { get; }
+        public double Price
+        {
+            get
+            {
+                switch (Size)
+                {
+                    case Size.Small: return 1.05;
+                    case Size.Medium: return 1.11;
+                    case Size.Large: return 1.22;
+                    default: throw new NotImplementedException();
+                }
+            }
+        }
             
         /// <summary>
         /// get calorie amount of drink
         /// </summary>
-        public uint Calories { get; }
+        public uint Calories
+        {
+            get
+            {
+                switch (Size)
+                {
+                    case Size.Small: return 56;
+                    case Size.Medium: return 72;
+                    case Size.Large: return 93;
+                    default: throw new NotImplementedException();
+                }
+            }
+        }
 
         /// <summary>
         /// holds any special instructions
         /// </summary>
-        public List<String> SpecialInstructions { get; }
-
-        // <summary>
-        /// holds the special instructions
-        /// </summary>
-        String[] Instructions = { "Add ice" };
-
-        public MarkarthMilk()
+        public List<string> SpecialInstructions
         {
-
+            get
+            {
+                List<string> instructions = new List<string>();
+                if (Ice) instructions.Add("Add ice");
+                return instructions;
+            }
         }
 
         /// <summary>
@@ -63,7 +105,7 @@ namespace BleakwindBuffet.Data.Drinks
         /// <returns>a string </returns>
         public override string ToString()
         {
-            return "{Size} Markarth Milk";
+            return Size.ToString() + " Markarth Milk";
         }
 
     }

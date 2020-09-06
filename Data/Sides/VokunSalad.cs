@@ -13,24 +13,71 @@ namespace BleakwindBuffet.Data.Sides
 {
     public class VokunSalad
     {
+        /// <summary>
+        /// setting size for the meal
+        /// </summary>
         private Size size = Size.Small;
 
-        public Size Size { get; set; }
+        /// <summary>
+        /// getter/setter for the size of meal
+        /// </summary>
+        public Size Size
+        {
+            get
+            {
+                return size;
+            }
+            set
+            {
+                size = value;
+            }
+        }
 
         /// <summary>
-        /// get Price of Smoke house Skeleton
+        /// get Price of VokunSalad different sizes
         /// </summary>
-        public double Price { get; }
+        public double Price
+        {
+            get
+            {
+                switch (Size)
+                {
+                    case Size.Small: return 0.93;
+                    case Size.Medium: return 1.28;
+                    case Size.Large: return 1.82;
+                    default: throw new NotImplementedException();
+                }
+            }
+        }
 
         /// <summary>
-        /// get Calories for the Smoke house Skeleton
+        /// get Calories for the VokunSalad different sizes
         /// </summary>
-        public uint Calories { get; }
+        public uint Calories
+        {
+            get
+            {
+                switch (Size)
+                {
+                    case Size.Small: return 41;
+                    case Size.Medium: return 52;
+                    case Size.Large: return 73;
+                    default: throw new NotImplementedException();
+                }
+            }
+        }
 
         /// <summary>
-        /// holds any special instructions
+        /// create special instructions
         /// </summary>
-        public List<String> SpecialInstructions { get; }
+        public List<string> SpecialInstructions
+        {
+            get
+            {
+                List<string> instructions = new List<string>();
+                return instructions;
+            }
+        }
 
         /// <summary>
         /// ToString Method to override ToString
@@ -38,7 +85,7 @@ namespace BleakwindBuffet.Data.Sides
         /// <returns>string</returns>
         public override string ToString()
         {
-            return "{Size} Vokun Salad";
+            return Size.ToString() + " Vokun Salad";
         }
 
     }

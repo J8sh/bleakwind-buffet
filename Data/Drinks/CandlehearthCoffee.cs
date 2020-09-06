@@ -36,46 +36,109 @@ namespace BleakwindBuffet.Data.Drinks
         /// <summary>
         /// getter/setter for ice
         /// </summary>
-        public bool Ice { get; set; }
+        public bool Ice
+        {
+            get
+            {
+                return ice;
+            }
+            set
+            {
+                ice = value;
+            }
+        }
 
         /// <summary>
         /// getter/setter for decaf
         /// </summary>
-        public bool Decaf { get; set; }
+        public bool Decaf
+        {
+            get
+            {
+                return decaf;
+            }
+            set
+            {
+                decaf = value;
+            }
+        }
 
         /// <summary>
         /// getter/setter for cream
         /// </summary>
-        public bool RoomForCream { get; set; }
+        public bool RoomForCream
+        {
+            get
+            {
+                return roomForCream;
+            }
+            set
+            {
+                roomForCream = value;
+            }
+        }
 
         /// <summary>
         /// getter/setter for drink size
         /// </summary>
-        public Size Size { get; set; }
+        public Size Size
+        {
+            get
+            {
+                return size;
+            }
+            set
+            {
+                size = value;
+            }
+        }
 
         /// <summary>
         /// get the price value
         /// </summary>
-        public double Price { get; }
+        public double Price
+        {
+            get
+            {
+                switch (Size)
+                {
+                    case Size.Small: return 0.75;
+                    case Size.Medium: return 1.25;
+                    case Size.Large: return 1.75;
+                    default: throw new NotImplementedException();
+                }
+            }
+        }
 
         /// <summary>
         /// get the calorie amount
         /// </summary>
-        public uint Calories { get; }
+        public uint Calories
+        {
+            get
+            {
+                switch (Size)
+                {
+                    case Size.Small: return 7;
+                    case Size.Medium: return 10;
+                    case Size.Large: return 20;
+                    default: throw new NotImplementedException();
+                }
+            }
+        }
 
         /// <summary>
         /// holds any special instructions
         /// </summary>
-        public List<String> SpecialInstructions { get; }
-
-        /// <summary>
-        /// holds the special instructions
-        /// </summary>
-        String[] Instructions = { "Add ice", "Add cream" };
-
-        public CandlehearthCoffee()
+        public List<string> SpecialInstructions
         {
-
+            get
+            {
+                List<string> instructions = new List<string>();
+                if (Ice) instructions.Add("Add ice");
+                if (RoomForCream) instructions.Add("Add cream");
+                return instructions;
+            }
         }
 
         /// <summary>
@@ -87,10 +150,10 @@ namespace BleakwindBuffet.Data.Drinks
             
             if(Decaf == true)
             {
-                return "{Size} Decaf Candlehearth Coffee";
+                return Size.ToString() + " Decaf Candlehearth Coffee";
             }
 
-            return "{Size} Candlehearth Coffee";
+            return Size.ToString() + " Candlehearth Coffee";
         }
 
 
