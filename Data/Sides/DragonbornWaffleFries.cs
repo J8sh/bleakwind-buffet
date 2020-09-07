@@ -1,7 +1,7 @@
 ﻿/*
  * Author: Joshua Garcia
- * Class name: VokunSalad.cs
- * Purpose: Class used to represent the Vokun Salad in the Sides namespace
+ * Class name: DragonbornWaffleFries.cs
+ * Purpose: Class used to represent the DragonbornWaffleFries in the Sides namespace
  */
 
 using System;
@@ -85,7 +85,7 @@ namespace BleakwindBuffet.Data.Sides
         /// <returns>string</returns>
         public override string ToString()
         {
-            return Size.ToString() + " Dragonborn Waffles Fries";
+            return Size.ToString() + " Dragonborn Waffle Fries";
         }
 
     }

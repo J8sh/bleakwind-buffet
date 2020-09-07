@@ -45,7 +45,7 @@ namespace BleakwindBuffet.Data.Entrees
             }
             set
             {
-                bun = true;
+                bun = value;
             }
         }
 
@@ -65,7 +65,7 @@ namespace BleakwindBuffet.Data.Entrees
             }
             set
             {
-                ketchup = true;
+                ketchup = value;
             }
         }
 
@@ -85,7 +85,7 @@ namespace BleakwindBuffet.Data.Entrees
             }
             set
             {
-                mustard = true;
+                mustard = value;
             }
         }
 
@@ -105,7 +105,7 @@ namespace BleakwindBuffet.Data.Entrees
             }
             set
             {
-                pickle = true;
+                pickle = value;
             }
         }
 
@@ -125,7 +125,7 @@ namespace BleakwindBuffet.Data.Entrees
             }
             set
             {
-                cheese = true;
+                cheese = value;
             }
         }
 
@@ -141,7 +141,7 @@ namespace BleakwindBuffet.Data.Entrees
                 if (!Ketchup) instructions.Add("Hold ketchup");
                 if (!Mustard) instructions.Add("Hold mustard");
                 if (!Pickle) instructions.Add("Hold pickle");
-                if (!Cheese) instructions.Add("Hols cheese");
+                if (!Cheese) instructions.Add("Hold cheese");
                 return instructions;
             }
         }
