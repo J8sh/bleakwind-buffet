@@ -1,5 +1,6 @@
 ﻿/*
  * Author: Zachery Brunner
+ * Modified by: Joshua Garcia
  * Class: ThugsTBoneTests.cs
  * Purpose: Test the ThugsTBone.cs class in the Data library
  */

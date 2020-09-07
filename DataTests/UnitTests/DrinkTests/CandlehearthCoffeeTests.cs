@@ -14,6 +14,9 @@ namespace BleakwindBuffet.DataTests.UnitTests.DrinkTests
 {
     public class CandlehearthCoffeeTests
     {
+        /// <summary>
+        /// test if ice included by default
+        /// </summary>
         [Fact]
         public void ShouldNotIncludeIceByDefault()
         {
@@ -21,6 +24,9 @@ namespace BleakwindBuffet.DataTests.UnitTests.DrinkTests
             Assert.False(cc.Ice);
         }
 
+        /// <summary>
+        /// test if decaf is not selected by default
+        /// </summary>
         [Fact]
         public void ShouldNotBeDecafByDefault()
         {
@@ -28,6 +34,9 @@ namespace BleakwindBuffet.DataTests.UnitTests.DrinkTests
             Assert.False(cc.Decaf);
         }
 
+        /// <summary>
+        /// test if cream is included by default
+        /// </summary>
         [Fact]
         public void ShouldNotHaveRoomForCreamByDefault()
         {
@@ -35,6 +44,9 @@ namespace BleakwindBuffet.DataTests.UnitTests.DrinkTests
             Assert.False(cc.RoomForCream);
         }
 
+        /// <summary>
+        /// test if size is small by default
+        /// </summary>
         [Fact]
         public void ShouldBeSmallByDefault()
         {
@@ -42,6 +54,9 @@ namespace BleakwindBuffet.DataTests.UnitTests.DrinkTests
             Assert.Equal(Size.Small, cc.Size);
         }
 
+        /// <summary>
+        /// test if we can change ice value
+        /// </summary>
         [Fact]
         public void ShouldBeAbleToSetIce()
         {
@@ -52,6 +67,9 @@ namespace BleakwindBuffet.DataTests.UnitTests.DrinkTests
             Assert.False(cc.Ice);
         }
 
+        /// <summary>
+        /// test if we can change decaf value
+        /// </summary>
         [Fact]
         public void ShouldBeAbleToSetDecaf()
         {
@@ -62,6 +80,9 @@ namespace BleakwindBuffet.DataTests.UnitTests.DrinkTests
             Assert.False(cc.Decaf);
         }
 
+        /// <summary>
+        /// test if we can change cream value
+        /// </summary>
         [Fact]
         public void ShouldBeAbleToSetRoomForCream()
         {
@@ -72,6 +93,9 @@ namespace BleakwindBuffet.DataTests.UnitTests.DrinkTests
             Assert.False(cc.RoomForCream);
         }
 
+        /// <summary>
+        /// test if we can change size value
+        /// </summary>
         [Fact]
         public void ShouldBeAbleToSetSize()
         {
@@ -84,6 +108,11 @@ namespace BleakwindBuffet.DataTests.UnitTests.DrinkTests
             Assert.Equal(Size.Small, cc.Size);
         }
 
+        /// <summary>
+        /// test if price is correct on each size
+        /// </summary>
+        /// <param name="size"> param for size value </param>
+        /// <param name="price"> param for price value </param>
         [Theory]
         [InlineData(Size.Small, 0.75)]
         [InlineData(Size.Medium, 1.25)]
@@ -95,6 +124,11 @@ namespace BleakwindBuffet.DataTests.UnitTests.DrinkTests
             Assert.Equal(price, cc.Price);
         }
 
+        /// <summary>
+        /// test if calories is correct for each size
+        /// </summary>
+        /// <param name="size"> param for size value </param>
+        /// <param name="cal"> param for price value </param>
         [Theory]
         [InlineData(Size.Small, 7)]
         [InlineData(Size.Medium, 10)]
@@ -106,6 +140,11 @@ namespace BleakwindBuffet.DataTests.UnitTests.DrinkTests
             Assert.Equal(cal, cc.Calories);
         }
 
+        /// <summary>
+        /// test the special instruction if working porperly
+        /// </summary>
+        /// <param name="includeIce"> param for ice value </param>
+        /// <param name="includeLemon"> param for lemon value </param>
         [Theory]
         [InlineData(true, true)]
         [InlineData(true, false)]
@@ -121,6 +160,11 @@ namespace BleakwindBuffet.DataTests.UnitTests.DrinkTests
             if (!includeCream && !includeIce) Assert.Empty(cc.SpecialInstructions);
         }
 
+        /// <summary>
+        /// test if toString works for each size
+        /// </summary>
+        /// <param name="size"> param for size value </param>
+        /// <param name="name"> variable to hold the correct string </param>
         [Theory]
         [InlineData(true, Size.Small, "Small Decaf Candlehearth Coffee")]
         [InlineData(true, Size.Medium, "Medium Decaf Candlehearth Coffee")]
