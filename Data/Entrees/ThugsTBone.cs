@@ -9,12 +9,12 @@ using System.Collections.Generic;
 
 namespace BleakwindBuffet.Data.Entrees
 {
-    public class ThugsTBone
+    public class ThugsTBone : Entree
     {
         /// <summary>
         /// get the price of the T Bone
         /// </summary>
-        public double Price
+        public override double Price
         {
             get
             {
@@ -25,7 +25,7 @@ namespace BleakwindBuffet.Data.Entrees
         /// <summary>
         ///  get the calorie count of the T bone
         /// </summary>
-        public uint Calories
+        public override uint Calories
         {
             get
             {
@@ -36,7 +36,7 @@ namespace BleakwindBuffet.Data.Entrees
         /// <summary>
         /// create a list of special instructions for the T Bone
         /// </summary>
-        public List<string> SpecialInstructions
+        public override List<string> SpecialInstructions
         {
             get
             {

@@ -9,7 +9,7 @@ using System.Collections.Generic;
 
 namespace BleakwindBuffet.Data.Entrees
 {
-    public class SmokehouseSkeleton
+    public class SmokehouseSkeleton : Entree
     {
         /// <summary>
         /// sausage links are included by default
@@ -94,7 +94,7 @@ namespace BleakwindBuffet.Data.Entrees
         /// <summary>
         /// get Price of Smoke house Skeleton
         /// </summary>
-        public double Price
+        public override double Price
         {
             get
             {
@@ -105,7 +105,7 @@ namespace BleakwindBuffet.Data.Entrees
         /// <summary>
         /// get Calories for the Smoke house Skeleton
         /// </summary>
-        public uint Calories
+        public override uint Calories
         {
             get
             {
@@ -116,7 +116,7 @@ namespace BleakwindBuffet.Data.Entrees
         /// <summary>
         /// get the special instructions for the Smoke house Skeleton
         /// </summary>
-        public List<string> SpecialInstructions
+        public override List<string> SpecialInstructions
         {
             get
             {

@@ -4,6 +4,7 @@
  * Class: ThugsTBoneTests.cs
  * Purpose: Test the ThugsTBone.cs class in the Data library
  */
+
 using Xunit;
 
 using BleakwindBuffet.Data;
@@ -13,6 +14,16 @@ namespace BleakwindBuffet.DataTests.UnitTests.EntreeTests
 {
     public class ThugsTBoneTests
     {
+        /// <summary>
+        /// Test if we are getting the entree from the Entree base cs file
+        /// </summary>
+        [Fact]
+        public void ShouldBeAEntree()
+        {
+            ThugsTBone entree = new ThugsTBone();
+            Assert.IsAssignableFrom<Entree>(entree);
+        }
+
         /// <summary>
         /// test if the price is right
         /// </summary>

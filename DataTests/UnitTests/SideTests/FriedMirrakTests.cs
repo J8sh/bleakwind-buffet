@@ -15,6 +15,16 @@ namespace BleakwindBuffet.DataTests.UnitTests.SideTests
     public class FriedMiraakTests
     {
         /// <summary>
+        /// Test if we are getting the side from the Side base cs file
+        /// </summary>
+        [Fact]
+        public void ShouldBeASide()
+        {
+            FriedMiraak side = new FriedMiraak();
+            Assert.IsAssignableFrom<Side>(side);
+        }
+
+        /// <summary>
         /// make sure the small size is set as default
         /// </summary>
         [Fact]

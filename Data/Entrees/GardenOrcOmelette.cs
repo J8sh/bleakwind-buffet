@@ -9,7 +9,7 @@ using System.Collections.Generic;
 
 namespace BleakwindBuffet.Data.Entrees
 {
-    public class GardenOrcOmelette
+    public class GardenOrcOmelette : Entree
     {
         /// <summary>
         /// broccoli are included by default
@@ -94,7 +94,7 @@ namespace BleakwindBuffet.Data.Entrees
         /// <summary>
         /// get price of Omelette
         /// </summary>
-        public double Price
+        public override double Price
         {
             get { return 4.57; }
         }
@@ -102,7 +102,7 @@ namespace BleakwindBuffet.Data.Entrees
         /// <summary>
         /// get calories of Omelette
         /// </summary>
-        public uint Calories
+        public override uint Calories
         {
             get { return 404; }
         }
@@ -110,7 +110,7 @@ namespace BleakwindBuffet.Data.Entrees
         /// <summary>
         /// get instructions for the Omelette
         /// </summary>
-        public List<string> SpecialInstructions
+        public override List<string> SpecialInstructions
         {
             get
             {

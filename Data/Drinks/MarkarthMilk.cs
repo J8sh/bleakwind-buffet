@@ -10,7 +10,7 @@ using BleakwindBuffet.Data.Enums;
 
 namespace BleakwindBuffet.Data.Drinks
 {
-    public class MarkarthMilk
+    public class MarkarthMilk : Drink
     {
         /// <summary>
         /// no ice is added by default
@@ -20,7 +20,7 @@ namespace BleakwindBuffet.Data.Drinks
         /// <summary>
         /// default size of small
         /// </summary>
-        private Size size = Size.Small;
+        //private Size size = Size.Small;
 
         /// <summary>
         /// get value of ice
@@ -36,26 +36,11 @@ namespace BleakwindBuffet.Data.Drinks
                 ice = value;
             }
         }
-
-        /// <summary>
-        /// get size of cup
-        /// </summary>
-        public Size Size
-        {
-            get
-            {
-                return size;
-            }
-            set
-            {
-                size = value;
-            }
-        }
             
         /// <summary>
         /// get price of drink
         /// </summary>
-        public double Price
+        public override double Price
         {
             get
             {
@@ -72,7 +57,7 @@ namespace BleakwindBuffet.Data.Drinks
         /// <summary>
         /// get calorie amount of drink
         /// </summary>
-        public uint Calories
+        public override uint Calories
         {
             get
             {
@@ -89,7 +74,7 @@ namespace BleakwindBuffet.Data.Drinks
         /// <summary>
         /// holds any special instructions
         /// </summary>
-        public List<string> SpecialInstructions
+        public override List<string> SpecialInstructions
         {
             get
             {

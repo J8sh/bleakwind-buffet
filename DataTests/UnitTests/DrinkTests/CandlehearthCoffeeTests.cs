@@ -15,6 +15,16 @@ namespace BleakwindBuffet.DataTests.UnitTests.DrinkTests
     public class CandlehearthCoffeeTests
     {
         /// <summary>
+        /// Test if Drink is coming from Drink base class file
+        /// </summary>
+        [Fact]
+        public void ShouldBeADrink()
+        {
+            CandlehearthCoffee cc = new CandlehearthCoffee();
+            Assert.IsAssignableFrom<Drink>(cc);
+        }
+
+        /// <summary>
         /// test if ice included by default
         /// </summary>
         [Fact]

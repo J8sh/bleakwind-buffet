@@ -10,7 +10,7 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace BleakwindBuffet.Data.Entrees
 {
-    public class ThalmorTriple 
+    public class ThalmorTriple : Entree
     {
         /// <summary>
         /// bun are included by defualt 
@@ -215,7 +215,7 @@ namespace BleakwindBuffet.Data.Entrees
         /// <summary>
         /// get the price for the Thalmor Triple
         /// </summary>
-        public double Price
+        public override double Price
         {
             get
             {
@@ -226,7 +226,7 @@ namespace BleakwindBuffet.Data.Entrees
         /// <summary>
         /// get the calorie count for the Thalmor Triple
         /// </summary>
-        public uint Calories
+        public override uint Calories
         {
             get
             {
@@ -237,7 +237,7 @@ namespace BleakwindBuffet.Data.Entrees
         /// <summary>
         /// get any special instructions for the Thalmor Triple
         /// </summary>
-        public List<string> SpecialInstructions
+        public override List<string> SpecialInstructions
         {
             get
             {
@@ -247,11 +247,6 @@ namespace BleakwindBuffet.Data.Entrees
                 return instructions;
             }
         }
-
-        /// <summary>
-        /// list of special instructions
-        /// </summary>
-        String[] Instructions = { "Hold bacon", "Hold egg" };
 
         /// <summary>
         /// ToString Method to override ToString

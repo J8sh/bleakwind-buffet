@@ -16,6 +16,16 @@ namespace BleakwindBuffet.DataTests.UnitTests.SideTests
     public class DragonbornWaffleFriesTests
     {
         /// <summary>
+        /// Test if we are getting the side from the Side base cs file
+        /// </summary>
+        [Fact]
+        public void ShouldBeASide()
+        {
+            DragonbornWaffleFries side = new DragonbornWaffleFries();
+            Assert.IsAssignableFrom<Side>(side);
+        }
+
+        /// <summary>
         /// make sure the small size is set as default
         /// </summary>
         [Fact]

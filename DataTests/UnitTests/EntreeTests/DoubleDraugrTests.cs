@@ -12,7 +12,17 @@ using BleakwindBuffet.Data.Entrees;
 namespace BleakwindBuffet.DataTests.UnitTests.EntreeTests
 {
     public class DoubleDraugrTests
-    {   
+    {
+
+        /// <summary>
+        /// Test if we are getting the entree from the Entree base cs file
+        /// </summary>
+        [Fact]
+        public void ShouldBeAEntree()
+        {
+            DoubleDraugr entree = new DoubleDraugr();
+            Assert.IsAssignableFrom<Entree>(entree);
+        }
         /// <summary>
         /// test if buns are included by default
         /// </summary>

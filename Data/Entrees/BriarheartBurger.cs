@@ -11,12 +11,12 @@ using System.Text;
 namespace BleakwindBuffet.Data.Entrees
 {
 
-    public class BriarheartBurger
+    public class BriarheartBurger : Entree
     {
         /// <summary>
         /// property for the burger price
         /// </summary>
-        public double Price
+        public override double Price
         {
             get { return 6.32;  }
         }
@@ -24,7 +24,7 @@ namespace BleakwindBuffet.Data.Entrees
         /// <summary>
         /// property for the Calorie total
         /// </summary>
-        public uint Calories 
+        public override uint Calories 
         {
             get { return 743; }
         }
@@ -132,7 +132,7 @@ namespace BleakwindBuffet.Data.Entrees
         /// <summary>
         /// special instructions for the burger
         /// </summary>
-        public List<string> SpecialInstructions
+        public override List<string> SpecialInstructions
         {
             get
             {

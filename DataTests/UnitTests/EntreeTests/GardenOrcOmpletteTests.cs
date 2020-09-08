@@ -13,6 +13,16 @@ namespace BleakwindBuffet.DataTests.UnitTests.EntreeTests
 {
     public class GardenOrcOmeletteTests
     {
+        /// <summary>
+        /// Test if we are getting the entree from the Entree base cs file
+        /// </summary>
+        [Fact]
+        public void ShouldBeAEntree()
+        {
+            GardenOrcOmelette entree = new GardenOrcOmelette();
+            Assert.IsAssignableFrom<Entree>(entree);
+        }
+
 
         /// <summary>
         /// tests if broccolis are included by default

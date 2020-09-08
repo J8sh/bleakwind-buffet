@@ -9,7 +9,7 @@ using System.Collections.Generic;
 
 namespace BleakwindBuffet.Data.Entrees
 {
-    public class PhillyPoacher
+    public class PhillyPoacher : Entree
     {
 
         /// <summary>
@@ -75,7 +75,7 @@ namespace BleakwindBuffet.Data.Entrees
         /// <summary>
         /// price for the Philly Poacher
         /// </summary>
-        public double Price
+        public override double Price
         {
             get
             {
@@ -86,7 +86,7 @@ namespace BleakwindBuffet.Data.Entrees
         /// <summary>
         /// get the calories for the philly poacher
         /// </summary>
-        public uint Calories
+        public override uint Calories
         {
             get
             {
@@ -97,7 +97,7 @@ namespace BleakwindBuffet.Data.Entrees
         /// <summary>
         /// get the special instructions for the Philly Poacher
         /// </summary>
-        public List<string> SpecialInstructions
+        public override List<string> SpecialInstructions
         {
             get
             {
