@@ -10,8 +10,10 @@ using System.Text;
 
 namespace BleakwindBuffet.Data.Entrees
 {
-
-    public class BriarheartBurger : Entree
+    /// <summary>
+    /// A Class for Briarheart Burger item
+    /// </summary>
+    public class BriarheartBurger : Entree, IOrderItem
     {
         /// <summary>
         /// property for the burger price

@@ -9,7 +9,10 @@ using System.Collections.Generic;
 
 namespace BleakwindBuffet.Data.Entrees
 {
-    public class GardenOrcOmelette : Entree
+    /// <summary>
+    /// A Class for Garden Orc Omelette item
+    /// </summary>
+    public class GardenOrcOmelette : Entree, IOrderItem
     {
         /// <summary>
         /// broccoli are included by default

@@ -14,7 +14,7 @@ namespace BleakwindBuffet.Data.Sides
     /// <summary>
     /// A base class representing the common properties of sides
     /// </summary>
-    public abstract class Side
+    public abstract class Side : IOrderItem
     {
         /// <summary>
         /// The size of the side
@@ -41,5 +41,20 @@ namespace BleakwindBuffet.Data.Sides
         /// Special instructions to prepare the side
         /// </summary>
         public abstract List<string> SpecialInstructions { get; }
+
+        uint IOrderItem.Calories()
+        {
+            throw new NotImplementedException();
+        }
+
+        double IOrderItem.Price()
+        {
+            throw new NotImplementedException();
+        }
+
+        List<string> IOrderItem.SpecialInstructions()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

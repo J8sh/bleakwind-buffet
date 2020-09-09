@@ -11,7 +11,10 @@ using BleakwindBuffet.Data.Enums;
 
 namespace BleakwindBuffet.Data.Drinks
 {
-    public class SailorSoda : Drink
+    /// <summary>
+    /// A Class for SailorSoda item
+    /// </summary>
+    public class SailorSoda : Drink, IOrderItem
     {
         /// <summary>
         /// use ice 

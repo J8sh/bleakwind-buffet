@@ -10,7 +10,10 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace BleakwindBuffet.Data.Entrees
 {
-    public class ThalmorTriple : Entree
+    /// <summary>
+    /// A Class for Thalmor Triple item
+    /// </summary>
+    public class ThalmorTriple : Entree, IOrderItem
     {
         /// <summary>
         /// bun are included by defualt 

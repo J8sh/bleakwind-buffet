@@ -13,7 +13,7 @@ namespace BleakwindBuffet.Data.Entrees
     /// <summary>
     /// A base class representing the common properties of entrees
     /// </summary>
-    public abstract class Entree
+    public abstract class Entree : IOrderItem
     {
 
         /// <summary>
@@ -37,5 +37,19 @@ namespace BleakwindBuffet.Data.Entrees
         /// </summary>
         public abstract List<string> SpecialInstructions { get; }
 
+        uint IOrderItem.Calories()
+        {
+            throw new NotImplementedException();
+        }
+
+        double IOrderItem.Price()
+        {
+            throw new NotImplementedException();
+        }
+
+        List<string> IOrderItem.SpecialInstructions()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

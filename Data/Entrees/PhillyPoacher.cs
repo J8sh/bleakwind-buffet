@@ -9,7 +9,10 @@ using System.Collections.Generic;
 
 namespace BleakwindBuffet.Data.Entrees
 {
-    public class PhillyPoacher : Entree
+    /// <summary>
+    /// A Class for Philly Poacher item
+    /// </summary>
+    public class PhillyPoacher : Entree, IOrderItem
     {
 
         /// <summary>

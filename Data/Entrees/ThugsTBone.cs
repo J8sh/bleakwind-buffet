@@ -9,7 +9,10 @@ using System.Collections.Generic;
 
 namespace BleakwindBuffet.Data.Entrees
 {
-    public class ThugsTBone : Entree
+    /// <summary>
+    /// A Class for Thugs T Bone item
+    /// </summary>
+    public class ThugsTBone : Entree, IOrderItem
     {
         /// <summary>
         /// get the price of the T Bone

@@ -10,7 +10,10 @@ using BleakwindBuffet.Data.Enums;
 
 namespace BleakwindBuffet.Data.Drinks
 {
-    public class MarkarthMilk : Drink
+    /// <summary>
+    /// A Class for Markarth Milk item
+    /// </summary>
+    public class MarkarthMilk : Drink, IOrderItem
     {
         /// <summary>
         /// no ice is added by default

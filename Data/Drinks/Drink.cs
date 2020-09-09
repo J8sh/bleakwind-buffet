@@ -15,7 +15,7 @@ namespace BleakwindBuffet.Data.Drinks
     /// <summary>
     /// A base class representing the common properties of drinks
     /// </summary>
-    public abstract class Drink
+    public abstract class Drink : IOrderItem
     {
         /// <summary>
         /// The size of the drink
@@ -42,6 +42,22 @@ namespace BleakwindBuffet.Data.Drinks
         /// Special instructions to prepare the drink
         /// </summary>
         public abstract List<string> SpecialInstructions { get; }
+
+        uint IOrderItem.Calories()
+        {
+            throw new NotImplementedException();
+        }
+
+        double IOrderItem.Price()
+        {
+            throw new NotImplementedException();
+        }
+
+        List<string> IOrderItem.SpecialInstructions()
+        {
+            throw new NotImplementedException();
+        }
+
 
     }
 }

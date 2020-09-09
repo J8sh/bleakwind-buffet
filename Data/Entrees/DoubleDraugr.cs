@@ -9,7 +9,10 @@ using System.Collections.Generic;
 
 namespace BleakwindBuffet.Data.Entrees
 {
-    public class DoubleDraugr : Entree
+    /// <summary>
+    /// A Class for Double Draugr item
+    /// </summary>
+    public class DoubleDraugr : Entree, IOrderItem
     {
         /// <summary>
         /// property for the burger price

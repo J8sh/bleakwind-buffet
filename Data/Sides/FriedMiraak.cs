@@ -11,7 +11,10 @@ using BleakwindBuffet.Data.Enums;
 
 namespace BleakwindBuffet.Data.Sides
 {
-    public class FriedMiraak : Side
+    /// <summary>
+    /// A Class for Fried Miraak item
+    /// </summary>
+    public class FriedMiraak : Side, IOrderItem
     {
         /// <summary>
         /// get the size of the meal

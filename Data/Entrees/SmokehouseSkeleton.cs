@@ -9,7 +9,10 @@ using System.Collections.Generic;
 
 namespace BleakwindBuffet.Data.Entrees
 {
-    public class SmokehouseSkeleton : Entree
+    /// <summary>
+    /// A Class for Smokehouse Skeletion item
+    /// </summary>
+    public class SmokehouseSkeleton : Entree, IOrderItem
     {
         /// <summary>
         /// sausage links are included by default

@@ -11,7 +11,10 @@ using BleakwindBuffet.Data.Enums;
 
 namespace BleakwindBuffet.Data.Sides
 {
-    public class MadOtarGrits : Side
+    /// <summary>
+    /// A Class for Mad Otar Grits item
+    /// </summary>
+    public class MadOtarGrits : Side, IOrderItem
     {
         /// <summary>
         /// set size of meal

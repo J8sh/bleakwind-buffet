@@ -11,7 +11,10 @@ using BleakwindBuffet.Data.Enums;
 
 namespace BleakwindBuffet.Data.Sides
 {
-    public class DragonbornWaffleFries : Side
+    /// <summary>
+    /// A Class for Dragonborn Waffle Fries item
+    /// </summary>
+    public class DragonbornWaffleFries : Side, IOrderItem
     {
         /// <summary>
         /// default size of meal
