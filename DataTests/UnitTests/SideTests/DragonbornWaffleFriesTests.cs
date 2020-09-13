@@ -16,6 +16,16 @@ namespace BleakwindBuffet.DataTests.UnitTests.SideTests
     public class DragonbornWaffleFriesTests
     {
         /// <summary>
+        /// Test if we are getting the Side from the IOrderItem interface cs file
+        /// </summary>
+        [Fact]
+        public void ShouldBeAssignableToIOrderItem()
+        {
+            DragonbornWaffleFries side = new DragonbornWaffleFries();
+            Assert.IsAssignableFrom<IOrderItem>(side);
+        }
+
+        /// <summary>
         /// Test if we are getting the side from the Side base cs file
         /// </summary>
         [Fact]

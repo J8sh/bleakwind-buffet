@@ -14,6 +14,16 @@ namespace BleakwindBuffet.DataTests.UnitTests.EntreeTests
     public class SmokehouseSkeletonTests
     {
         /// <summary>
+        /// Test if we are getting the Entree from the IOrderItem interface cs file
+        /// </summary>
+        [Fact]
+        public void ShouldBeAssignableToIOrderItem()
+        {
+            SmokehouseSkeleton entree = new SmokehouseSkeleton();
+            Assert.IsAssignableFrom<IOrderItem>(entree);
+        }
+
+        /// <summary>
         /// Test if we are getting the entree from the Entree base cs file
         /// </summary>
         [Fact]

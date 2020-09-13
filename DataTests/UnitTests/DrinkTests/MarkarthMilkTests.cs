@@ -15,6 +15,16 @@ namespace BleakwindBuffet.DataTests.UnitTests.DrinkTests
     public class MarkarthMilkTests
     {
         /// <summary>
+        /// Test if we are getting the Drink from the IOrderItem interface cs file
+        /// </summary>
+        [Fact]
+        public void ShouldBeAssignableToIOrderItem()
+        {
+            MarkarthMilk mm = new MarkarthMilk();
+            Assert.IsAssignableFrom<IOrderItem>(mm);
+        }
+
+        /// <summary>
         /// Test if we are getting the Drink from the Drink base cs file
         /// </summary>
         [Fact]

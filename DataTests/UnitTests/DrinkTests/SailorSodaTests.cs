@@ -18,6 +18,16 @@ namespace BleakwindBuffet.DataTests.UnitTests.DrinkTests
     public class SailorSodaTests
     {
         /// <summary>
+        /// Test if we are getting the Drink from the IOrderItem interface cs file
+        /// </summary>
+        [Fact]
+        public void ShouldBeAssignableToIOrderItem()
+        {
+            SailorSoda ss = new SailorSoda();
+            Assert.IsAssignableFrom<IOrderItem>(ss);
+        }
+
+        /// <summary>
         /// Test if we are getting the Drink from the Drink base cs file
         /// </summary>
         [Fact]

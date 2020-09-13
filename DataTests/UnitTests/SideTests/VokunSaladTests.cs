@@ -15,6 +15,16 @@ namespace BleakwindBuffet.DataTests.UnitTests.SideTests
     public class VokunSaladTests
     {
         /// <summary>
+        /// Test if we are getting the Side from the IOrderItem interface cs file
+        /// </summary>
+        [Fact]
+        public void ShouldBeAssignableToIOrderItem()
+        {
+            VokunSalad side = new VokunSalad();
+            Assert.IsAssignableFrom<IOrderItem>(side);
+        }
+
+        /// <summary>
         /// Test if we are getting the side from the Side base cs file
         /// </summary>
         [Fact]

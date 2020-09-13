@@ -15,6 +15,16 @@ namespace BleakwindBuffet.DataTests.UnitTests.SideTests
     public class MadOtarGritsTests
     {
         /// <summary>
+        /// Test if we are getting the Side from the IOrderItem interface cs file
+        /// </summary>
+        [Fact]
+        public void ShouldBeAssignableToIOrderItem()
+        {
+            MadOtarGrits side = new MadOtarGrits();
+            Assert.IsAssignableFrom<IOrderItem>(side);
+        }
+
+        /// <summary>
         /// Test if we are getting the side from the Side base cs file
         /// </summary>
         [Fact]

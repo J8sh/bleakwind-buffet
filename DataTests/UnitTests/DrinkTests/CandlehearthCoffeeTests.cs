@@ -15,6 +15,16 @@ namespace BleakwindBuffet.DataTests.UnitTests.DrinkTests
     public class CandlehearthCoffeeTests
     {
         /// <summary>
+        /// Test if we are getting the Drink from the IOrderItem interface cs file
+        /// </summary>
+        [Fact]
+        public void ShouldBeAssignableToIOrderItem()
+        {
+            CandlehearthCoffee cc = new CandlehearthCoffee();
+            Assert.IsAssignableFrom<IOrderItem>(cc);
+        }
+
+        /// <summary>
         /// Test if Drink is coming from Drink base class file
         /// </summary>
         [Fact]

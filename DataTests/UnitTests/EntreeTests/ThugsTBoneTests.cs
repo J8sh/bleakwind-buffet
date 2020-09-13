@@ -15,6 +15,16 @@ namespace BleakwindBuffet.DataTests.UnitTests.EntreeTests
     public class ThugsTBoneTests
     {
         /// <summary>
+        /// Test if we are getting the Entree from the IOrderItem interface cs file
+        /// </summary>
+        [Fact]
+        public void ShouldBeAssignableToIOrderItem()
+        {
+            ThugsTBone entree = new ThugsTBone();
+            Assert.IsAssignableFrom<IOrderItem>(entree);
+        }
+
+        /// <summary>
         /// Test if we are getting the entree from the Entree base cs file
         /// </summary>
         [Fact]
