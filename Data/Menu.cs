@@ -20,11 +20,13 @@ namespace BleakwindBuffet.Data
     /// </summary>
     public static class Menu
     {
-
-        static IEnumerable<IOrderItem> Entrees()
+        public static List<IEnumerable<IOrderItem>> FullMenu
         {
-            return ;
+
         }
+
+
+        //static IEnumerable<IOrderItem> Entrees()
         
     }
 }
