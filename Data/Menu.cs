@@ -23,8 +23,12 @@ namespace BleakwindBuffet.Data
 
         static IEnumerable<IOrderItem> Entrees()
         {
-            return ;
+            return Entree.GetEnumerator();
         }
-        
+
+        public IEnumerator GetEnumerator()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
