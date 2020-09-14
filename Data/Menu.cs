@@ -22,7 +22,12 @@ namespace BleakwindBuffet.Data
     {
         public static List<IEnumerable<IOrderItem>> FullMenu
         {
+            get
+            {
+                List<IEnumerable<IOrderItem>> FullMenu = new List<IEnumerable<IOrderItem>>();
 
+                return FullMenu;
+            }
         }
 
 
