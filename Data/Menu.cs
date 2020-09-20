@@ -20,15 +20,16 @@ namespace BleakwindBuffet.Data
     /// </summary>
     public static class Menu
     {
+        public static List<IEnumerable<IOrderItem>> FullMenu
+        {
+            get
+            {
+                List<IEnumerable<IOrderItem>> FullMenu = new List<IEnumerable<IOrderItem>>();
 
         static IEnumerable<IOrderItem> Entrees()
         {
-            return Entree.GetEnumerator();
+            return ;
         }
-
-        public IEnumerator GetEnumerator()
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }
