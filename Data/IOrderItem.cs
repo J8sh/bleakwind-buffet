@@ -17,20 +17,17 @@ namespace BleakwindBuffet.Data
         /// <summary>
         /// get price of item
         /// </summary>
-        /// <returns></returns>
-        double Price();
+        double Price { get; }
 
         /// <summary>
         /// get the calories of item
         /// </summary>
-        /// <returns></returns>
-        uint Calories();
+        uint Calories { get; }
 
         /// <summary>
         /// get any special instructions from the item
         /// </summary>
-        /// <returns></returns>
-        List<string> SpecialInstructions();
+        List<string> SpecialInstructions { get; }
 
     }
 }

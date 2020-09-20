@@ -37,19 +37,6 @@ namespace BleakwindBuffet.Data.Entrees
         /// </summary>
         public abstract List<string> SpecialInstructions { get; }
 
-        uint IOrderItem.Calories()
-        {
-            throw new NotImplementedException();
-        }
-
-        double IOrderItem.Price()
-        {
-            throw new NotImplementedException();
-        }
-
-        List<string> IOrderItem.SpecialInstructions()
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }
