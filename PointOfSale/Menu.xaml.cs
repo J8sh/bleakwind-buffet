@@ -22,5 +22,79 @@ namespace PointOfSale
         {
             InitializeComponent();
         }
+
+
+        void BriarheartEntree(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        void DoubleDraugrEntree(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        void ThalmorTripleEntree(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        void SmokehouseSkeletonEntree(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        void GardenOrcOmletteEntree(object sender, RoutedEventArgs e)
+        {
+
+        }
+        
+        void ThugsTBoneEntree(object sender, RoutedEventArgs e)
+        {
+
+        }
+        void SalorSodaDrink(object sender, RoutedEventArgs e){
+
+        }
+
+        void MarkathMilkDrink(object sender, RoutedEventArgs e)
+        {
+
+        }
+        void AretinoAppleJuiceDrink(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        void CandlehearthCoffeeDrink(object sender, RoutedEventArgs e)
+        {
+
+        }
+        void WarriorWaterDrink(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        void VokunSaladSide(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        void FriedMiraakSide(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        void MadOtarGritsSide(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        void DragonbornWaffleFriesSide(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+
     }
 }

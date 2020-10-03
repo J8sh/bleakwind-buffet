@@ -23,25 +23,25 @@
         </TextBlock>
 
         <StackPanel Grid.Row="1" Grid.Column="0">
-            <Button Margin="30 10" Padding="0 10">Briarheart</Button>
-            <Button Margin="30 10" Padding="0 10">Double Draugr</Button>
-            <Button Margin="30 10" Padding="0 10">Thalmor Triple</Button>
-            <Button Margin="30 10" Padding="0 10">Smokehouse Skeleton</Button>
-            <Button Margin="30 10" Padding="0 10">Gardern Orc Omlette</Button>
-            <Button Margin="30 10" Padding="0 10">Thugs T-Bone</Button>
+            <Button Click="BriarheartEntree" Margin="30 10" Padding="0 10">Briarheart</Button>
+            <Button Click="DoubleDraugrEntree" Margin="30 10" Padding="0 10">Double Draugr</Button>
+            <Button Click="ThalmorTripleEntree" Margin="30 10" Padding="0 10">Thalmor Triple</Button>
+            <Button Click="SmokehouseSkeletonEntree" Margin="30 10" Padding="0 10">Smokehouse Skeleton</Button>
+            <Button Click="GardenOrcOmletteEntree" Margin="30 10" Padding="0 10">Gardern Orc Omlette</Button>
+            <Button Click="ThugsTBoneEntree" Margin="30 10" Padding="0 10">Thugs T-Bone</Button>
         </StackPanel>
         <StackPanel Grid.Row="1" Grid.Column="1">
-            <Button Margin="30 10" Padding="0 10">Salor Soda</Button>
-            <Button Margin="30 10" Padding="0 10">Markath Milk</Button>
-            <Button Margin="30 10" Padding="0 10">Aretino Apple Juice</Button>
-            <Button Margin="30 10" Padding="0 10">Candlehearth Coffee</Button>
-            <Button Margin="30 10" Padding="0 10">Warrior Water</Button>
+            <Button Click="SalorSodaDrink" Margin="30 10" Padding="0 10">Salor Soda</Button>
+            <Button Click="MarkathMilkDrink" Margin="30 10" Padding="0 10">Markath Milk</Button>
+            <Button Click="AretinoAppleJuiceDrink" Margin="30 10" Padding="0 10">Aretino Apple Juice</Button>
+            <Button Click="CandlehearthCoffeeDrink" Margin="30 10" Padding="0 10">Candlehearth Coffee</Button>
+            <Button Click="WarriorWaterDrink" Margin="30 10" Padding="0 10">Warrior Water</Button>
         </StackPanel>
         <StackPanel Grid.Row="1" Grid.Column="3">
-            <Button Margin="30 10" Padding="0 10">Vokun Salad</Button>
-            <Button Margin="30 10" Padding="0 10">Fried Miraak</Button>
-            <Button Margin="30 10" Padding="0 10">Mad Otar Grits</Button>
-            <Button Margin="30 10" Padding="0 10">Dragonborn Waffle Fries</Button>
+            <Button Click="VokunSaladSide" Margin="30 10" Padding="0 10">Vokun Salad</Button>
+            <Button Click="FriedMiraakSide" Margin="30 10" Padding="0 10">Fried Miraak</Button>
+            <Button Click="MadOtarGritsSide" Margin="30 10" Padding="0 10">Mad Otar Grits</Button>
+            <Button Click="DragonbornWaffleFriesSide" Margin="30 10" Padding="0 10">Dragonborn Waffle Fries</Button>
         </StackPanel>
 
     </Grid>
