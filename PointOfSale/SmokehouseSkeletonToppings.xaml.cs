@@ -14,11 +14,11 @@ using System.Windows.Shapes;
 namespace PointOfSale
 {
     /// <summary>
-    /// Interaction logic for ToppingSelection.xaml
+    /// Interaction logic for SmokehouseSkeletonToppings.xaml
     /// </summary>
-    public partial class ToppingSelection : UserControl
+    public partial class SmokehouseSkeletonToppings : UserControl
     {
-        public ToppingSelection()
+        public SmokehouseSkeletonToppings()
         {
             InitializeComponent();
         }
