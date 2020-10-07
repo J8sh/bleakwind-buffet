@@ -18,9 +18,22 @@ namespace PointOfSale
     /// </summary>
     public partial class PhillyPoacherToppings : UserControl
     {
-        public PhillyPoacherToppings()
+        MainScreen ancestor;
+
+        public PhillyPoacherToppings(MainScreen ancestor)
         {
             InitializeComponent();
+            this.ancestor = ancestor;
+        }
+
+        /// <summary>
+        /// A Method to switch back to main menu view
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        void OnSwitchScreen(object sender, RoutedEventArgs e)
+        {
+            ancestor.SwitchScreen(Screen.Menu);
         }
     }
 }

@@ -14,26 +14,27 @@ using System.Windows.Shapes;
 namespace PointOfSale
 {
     /// <summary>
-    /// Interaction logic for DoubleDraugrToppings.xaml
+    /// Interaction logic for FriedMiraakOptions.xaml
     /// </summary>
-    public partial class DoubleDraugrToppings : UserControl
+    public partial class FriedMiraakOptions : UserControl
     {
-        /// <summary>
-        /// Data Type MainScreen
-        /// </summary>
         MainScreen ancestor;
 
-        public DoubleDraugrToppings(MainScreen ancestor)
+        public FriedMiraakOptions(MainScreen ancestor)
         {
             InitializeComponent();
             this.ancestor = ancestor;
         }
 
+        /// <summary>
+        /// A Method to switch back to main menu view
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         void OnSwitchScreen(object sender, RoutedEventArgs e)
         {
             ancestor.SwitchScreen(Screen.Menu);
         }
-
 
     }
 }

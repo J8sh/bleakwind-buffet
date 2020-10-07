@@ -18,9 +18,22 @@ namespace PointOfSale
     /// </summary>
     public partial class ThugsTBoneToppings : UserControl
     {
-        public ThugsTBoneToppings()
+        MainScreen ancestor;
+
+        public ThugsTBoneToppings(MainScreen ancestor)
         {
             InitializeComponent();
+            this.ancestor = ancestor;
+        }
+
+        /// <summary>
+        /// A Method to switch back to main menu view
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        void OnSwitchScreen(object sender, RoutedEventArgs e)
+        {
+            ancestor.SwitchScreen(Screen.Menu);
         }
     }
 }

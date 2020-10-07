@@ -17,10 +17,10 @@
         </Grid.RowDefinitions>
         
         <!-- Layout for the whole order site -->
-        <Border Grid.RowSpan="2" Grid.Column="0">
-            <local:Menu/>
+        <Border x:Name="theMenu" Grid.RowSpan="2" Grid.Column="0">
+            <local:Menu x:Name="menuDisplay"/>
         </Border>
-        <Border Grid.RowSpan="2" Grid.Column="1">
+        <Border x:Name="theOrder" Grid.RowSpan="2" Grid.Column="1">
             <local:OrderDisplay/>
         </Border>
         

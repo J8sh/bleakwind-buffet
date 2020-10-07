@@ -18,9 +18,24 @@ namespace PointOfSale
     /// </summary>
     public partial class BriarheartToppings : UserControl
     {
-        public BriarheartToppings()
+        //public MainScreen Ancestor { get; set; }
+        MainScreen ancestor;
+
+        public BriarheartToppings(MainScreen ancestor)
         {
             InitializeComponent();
+            this.ancestor = ancestor;
         }
+
+        /// <summary>
+        /// A Method to switch back to main menu view
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        void OnSwitchScreen(object sender, RoutedEventArgs e)
+        {
+            ancestor.SwitchScreen(Screen.Menu);
+        }
+
     }
 }
