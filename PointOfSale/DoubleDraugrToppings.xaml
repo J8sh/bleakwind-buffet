@@ -18,10 +18,12 @@
             <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
 
+        <!-- Title -->
         <TextBlock Grid.Row="0" Grid.ColumnSpan="3" TextAlignment="Center"> 
             Customize
         </TextBlock>
 
+        <!-- Display options -->
         <StackPanel Grid.Row="1" Grid.Column="0">
             <CheckBox Margin="10" IsChecked="True">
                 Tomato
@@ -34,6 +36,7 @@
             </CheckBox>
         </StackPanel>
 
+        <!-- Button to go back to main menu -->
         <Button Click="OnSwitchScreen" Grid.Column="2" Grid.Row="2" Margin="30 10">
             Done
         </Button>

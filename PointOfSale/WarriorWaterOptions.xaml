@@ -18,10 +18,12 @@
             <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
 
+        <!-- title -->
         <TextBlock Grid.Row="0" Grid.ColumnSpan="3" TextAlignment="Center"> 
             Customize
         </TextBlock>
 
+        <!-- display options -->
         <StackPanel Grid.Row="1" Grid.Column="0">
             <RadioButton Margin="10">
                 Small
@@ -42,6 +44,7 @@
             </CheckBox>
         </StackPanel>
 
+        <!-- button to go back to main menu -->
         <Button Click="OnSwitchScreen" Grid.Column="2" Grid.Row="2" Margin="30 10">
             Done
         </Button>

@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+* Author: Joshua Garcia
+* Class name: ThalmorTripleToppings.xaml.cs
+* Purpose: UserControl to display the options for Thalmor Triple
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -18,8 +24,15 @@ namespace PointOfSale
     /// </summary>
     public partial class ThalmorTripleToppings : UserControl
     {
+        /// <summary>
+        /// Creating a MainScreen Datatype to link to the parent UserControl
+        /// </summary>
         MainScreen ancestor;
 
+        /// <summary>
+        /// Initializing the UserControl
+        /// </summary>
+        /// <param name="ancestor"></param>
         public ThalmorTripleToppings(MainScreen ancestor)
         {
             InitializeComponent();

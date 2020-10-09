@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+* Author: Joshua Garcia
+* Class name: VokunSaladOptions.xaml.cs
+* Purpose: UserControl to display the options for Vokun Salad
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -18,8 +24,15 @@ namespace PointOfSale
     /// </summary>
     public partial class VokunSaladOptions : UserControl
     {
+        /// <summary>
+        /// Creating a MainScreen Datatype to link to the parent UserControl
+        /// </summary>
         MainScreen ancestor;
 
+        /// <summary>
+        /// Initializing the UserControl
+        /// </summary>
+        /// <param name="ancestor"></param>
         public VokunSaladOptions(MainScreen ancestor)
         {
             InitializeComponent();

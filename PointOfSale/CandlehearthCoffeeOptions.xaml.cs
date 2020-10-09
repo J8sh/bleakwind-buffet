@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+* Author: Joshua Garcia
+* Class name: CandlehearthCoffeeOptions.xaml.cs
+* Purpose: UserControl to display the options for Candlehearth Coffee
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -18,8 +24,13 @@ namespace PointOfSale
     /// </summary>
     public partial class CandlehearthCoffeeOptions : UserControl
     {
+        // Creating a MainScreen Datatype to link to the parent UserControl
         MainScreen ancestor;
 
+        /// <summary>
+        /// Initializing the UserControl
+        /// </summary>
+        /// <param name="ancestor"></param>
         public CandlehearthCoffeeOptions(MainScreen ancestor)
         {
             InitializeComponent();

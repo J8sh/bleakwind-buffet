@@ -18,10 +18,12 @@
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
 
+        <!-- title -->
         <TextBlock Grid.Row="0" Grid.ColumnSpan="3" TextAlignment="Center"> 
             Add to Order
         </TextBlock>
 
+        <!-- display all menu item as buttons -->
         <StackPanel Grid.Row="1" Grid.Column="0">
             <Button Click="BriarheartEntree" Margin="30 10" Padding="0 10">Briarheart</Button>
             <Button Click="DoubleDraugrEntree" Margin="30 10" Padding="0 10">Double Draugr</Button>

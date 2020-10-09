@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+* Author: Joshua Garcia
+* Class name: OrderDisplay.xaml.cs
+* Purpose: UserControl to display the whole order and the price
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -18,6 +24,9 @@ namespace PointOfSale
     /// </summary>
     public partial class OrderDisplay : UserControl
     {
+        /// <summary>
+        /// Initializing the UserControl
+        /// </summary>
         public OrderDisplay()
         {
             InitializeComponent();

@@ -16,8 +16,10 @@
             <RowDefinition Height="20"></RowDefinition>
         </Grid.RowDefinitions>
 
+        <!-- display the complete order -->
         <ListView/>
 
+        <!-- display the total of order -->
         <TextBlock Grid.Row="2" TextAlignment="Center">SubTotal: </TextBlock>
         <TextBlock Grid.Row="3" TextAlignment="Center">Tax: </TextBlock>
         <TextBlock Grid.Row="4" TextAlignment="Center">Total: </TextBlock>

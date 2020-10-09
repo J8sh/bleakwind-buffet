@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+* Author: Joshua Garcia
+* Class name: SmokehouseSkeletonToppings.xaml.cs
+* Purpose: UserControl to display the options for SmokehouseSkeleton
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -18,8 +24,15 @@ namespace PointOfSale
     /// </summary>
     public partial class SmokehouseSkeletonToppings : UserControl
     {
+        /// <summary>
+        /// Creating a MainScreen Datatype to link to the parent UserControl
+        /// </summary>
         MainScreen ancestor;
 
+        /// <summary>
+        /// Initializing the Usercontrol
+        /// </summary>
+        /// <param name="ancestor"></param>
         public SmokehouseSkeletonToppings(MainScreen ancestor)
         {
             InitializeComponent();

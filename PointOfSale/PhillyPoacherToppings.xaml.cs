@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+* Author: Joshua Garcia
+* Class name: PhillyPoacherToppings.xaml.cs
+* Purpose: UserControl to display the options for Philly Poacher
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -18,8 +24,15 @@ namespace PointOfSale
     /// </summary>
     public partial class PhillyPoacherToppings : UserControl
     {
+        /// <summary>
+        /// Creating a MainScreen Datatype to link to the parent UserControl
+        /// </summary>
         MainScreen ancestor;
 
+        /// <summary>
+        /// Initializing the UserControl
+        /// </summary>
+        /// <param name="ancestor"></param>
         public PhillyPoacherToppings(MainScreen ancestor)
         {
             InitializeComponent();

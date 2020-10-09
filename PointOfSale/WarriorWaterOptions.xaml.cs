@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+* Author: Joshua Garcia
+* Class name: WarriorWaterOptions.xaml.cs
+* Purpose: UserControl to display the options for WarriorWater
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -18,8 +24,15 @@ namespace PointOfSale
     /// </summary>
     public partial class WarriorWaterOptions : UserControl
     {
+        /// <summary>
+        /// Creating a MainScreen Datatype to link to the parent UserControl
+        /// </summary>
         MainScreen ancestor;
 
+        /// <summary>
+        /// Initializing the Usercontrol
+        /// </summary>
+        /// <param name="ancestor"></param>
         public WarriorWaterOptions(MainScreen ancestor)
         {
             InitializeComponent();

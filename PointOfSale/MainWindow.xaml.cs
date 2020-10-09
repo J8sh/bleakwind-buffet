@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+* Author: Joshua Garcia
+* Class name: MainWindow.xaml.cs
+* Purpose: UserControl to display the whole PointOfSale Project
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,6 +26,9 @@ namespace PointOfSale
     /// </summary>
     public partial class MainWindow : Window
     {
+        /// <summary>
+        /// Initializing the UserControl
+        /// </summary>
         public MainWindow()
         {
             InitializeComponent();
