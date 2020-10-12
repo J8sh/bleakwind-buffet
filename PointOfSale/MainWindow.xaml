@@ -5,7 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PointOfSale"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="550" Width="800">
+    <Window.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="TextAlignment" Value="Center"></Setter>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="30 10"></Setter>
+            <Setter Property="Padding" Value="0 10"></Setter>
+        </Style>
+        <Style TargetType="RadioButton">
+            <Setter Property="Margin" Value="10"></Setter>
+        </Style>
+        <Style TargetType="CheckBox">
+            <Setter Property="Margin" Value="10"></Setter>
+        </Style>
+    </Window.Resources>
     <Grid>
         <!-- display the whole display -->
         <local:MainScreen/>

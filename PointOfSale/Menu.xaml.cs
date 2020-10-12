@@ -58,6 +58,12 @@ namespace PointOfSale
             Ancestor.SwitchScreen(Screen.DoubleDraugrToppings);
         }
 
+        void PhillyPoacherEntree(object sender, RoutedEventArgs e)
+        {
+            Ancestor.SwitchScreen(Screen.PhillyPoacherToppings);
+        }
+
+
         /// <summary>
         /// A Method used to switch dislay
         /// </summary>

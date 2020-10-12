@@ -15,56 +15,56 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="100"/>
             <RowDefinition Height="1*"/>
-            <RowDefinition Height="50"/>
+            <RowDefinition Height="65"/>
         </Grid.RowDefinitions>
 
         <!-- title -->
-        <TextBlock Grid.Row="0" Grid.ColumnSpan="3" TextAlignment="Center"> 
+        <TextBlock Grid.Row="0" Grid.ColumnSpan="3"> 
             Customize
         </TextBlock>
 
         <!-- display options -->
         <StackPanel Grid.Row="1" Grid.Column="0">
-            <RadioButton Margin="10">
+            <RadioButton>
                 Small
             </RadioButton>
-            <RadioButton Margin="10">
+            <RadioButton>
                 Medium
             </RadioButton>
-            <RadioButton Margin="10">
+            <RadioButton>
                 Large
             </RadioButton>
         </StackPanel>
         
         <StackPanel Grid.Row="1" Grid.Column="1">
-            <RadioButton Margin="10">
+            <RadioButton>
                 Blackberry
             </RadioButton>
-            <RadioButton Margin="10">
+            <RadioButton>
                 Cherry
             </RadioButton>
-            <RadioButton Margin="10">
+            <RadioButton>
                 Grapefruit
             </RadioButton>
-            <RadioButton Margin="10">
+            <RadioButton>
                 Lemon
             </RadioButton>
-            <RadioButton Margin="10">
+            <RadioButton>
                 Peach
             </RadioButton>
-            <RadioButton Margin="10">
+            <RadioButton>
                 Watermelon
             </RadioButton>
         </StackPanel>
         
         <StackPanel Grid.Row="1" Grid.Column="2">
-            <CheckBox Margin="10">
+            <CheckBox>
                 Ice
             </CheckBox>
         </StackPanel>
 
         <!-- button to go back the main menu -->
-        <Button Click="OnSwitchScreen" Grid.Column="2" Grid.Row="2" Margin="30 10">
+        <Button Click="OnSwitchScreen" Grid.Column="2" Grid.Row="2">
             Done
         </Button>
             

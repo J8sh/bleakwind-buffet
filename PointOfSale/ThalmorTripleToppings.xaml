@@ -16,26 +16,26 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="100"/>
             <RowDefinition Height="1*"/>
-            <RowDefinition Height="50"/>
+            <RowDefinition Height="65"/>
         </Grid.RowDefinitions>
 
         <!-- title -->
-        <TextBlock Grid.Row="0" Grid.ColumnSpan="3" TextAlignment="Center"> 
+        <TextBlock Grid.Row="0" Grid.ColumnSpan="3"> 
             Customize
         </TextBlock>
 
         <!-- display options -->
         <StackPanel Grid.Row="1" Grid.Column="0">
-            <CheckBox Margin="10" IsChecked="True">
+            <CheckBox IsChecked="True">
                 Bacon
             </CheckBox>
-            <CheckBox Margin="10" IsChecked="True">
+            <CheckBox IsChecked="True">
                 Egg
             </CheckBox>
         </StackPanel>
 
         <!-- button to go back to main menu -->
-        <Button Click="OnSwitchScreen" Grid.Column="2" Grid.Row="2" Margin="30 10">
+        <Button Click="OnSwitchScreen" Grid.Column="2" Grid.Row="2">
             Done
         </Button>
     </Grid>
